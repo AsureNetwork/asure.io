@@ -1,0 +1,3 @@
+# See https://github.com/npm/npm/issues/17161#issuecomment-337696678
+package.json text eol=lf
+package-lock.json text eol=lf

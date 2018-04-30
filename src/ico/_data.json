@@ -1,0 +1,45 @@
+{
+  "index": {
+    "title": "Asure ICO - Asure Crowdsale ASR Tokens",
+    "keywords": "Asure ICO - Asure Crowdsale ASR Tokens",
+    "description": "Asure ICO - Asure Crowdsale ASR Tokens",
+    "headerLinks": {
+      "team": {
+        "title": "Team",
+        "url": "#team",
+        "urlSegment": ""
+      },
+      "blog": {
+        "title": "Blog",
+        "url": "blog/",
+        "urlSegment": "blog"
+      },
+      "ico": {
+        "title": "ICO",
+        "url": "ico/",
+        "urlSegment": "ico"
+      },
+      "blog": {
+        "title": "Blog",
+        "url": "blog/",
+        "urlSegment": "blog"
+      },
+      "products": {
+        "title": "Products",
+        "url": "products/",
+        "urlSegment": ""
+      },
+      "feature": {
+        "title": "Feature",
+        "url": "#feature",
+        "urlSegment": ""
+      },
+      "contacts": {
+        "title": "Contacts",
+        "url": "#contacts",
+        "urlSegment": ""
+      }
+    }
+  }
+
+}

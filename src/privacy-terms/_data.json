@@ -1,0 +1,36 @@
+{
+  "index": {
+    "title": "ICO",
+    "keywords": "ICO",
+    "description": "ICO",
+
+    "headerLinks": {
+      "team": {
+        "title": "Team",
+        "url": "#team",
+        "urlSegment": ""
+      },
+      "blog": {
+        "title": "Blog",
+        "url": "blog/",
+        "urlSegment": "blog"
+      },
+      "ico": {
+        "title": "ICO",
+        "url": "ico/",
+        "urlSegment": "ico"
+      },
+
+      "feature": {
+        "title": "Feature",
+        "url": "#feature",
+        "urlSegment": ""
+      },
+      "contacts": {
+        "title": "Contacts",
+        "url": "#contacts",
+        "urlSegment": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<%
+fixUrl = function(path, url){
+    //work with current.path in helper directly is not correct
+    let count = path.length-1;
+    let fixedUrl="";
+    for(let i=0; i<count; i++){
+        fixedUrl = fixedUrl.concat("../");
+    }
+    fixedUrl = fixedUrl.concat(url);
+    return fixedUrl;
+}
+
+getBlogData = function(path){
+    //work with current.path in helper directly is not correct
+    let blogName = path[path.length - 2];
+
+    return public.blog.posts._data[blogName]
+}
+getByKey = function (key, value) {
+    if(current.path[0] === "blog" && current.path[1] === "posts"){
+        let length = current.path.length - 1;
+        let blogName = current.path[length - 1];
+        let fileName = current.path[length];
+
+        let valueInFolder = public.blog.posts[blogName]._data[fileName] ? public.blog.posts[blogName]._data[fileName][key] : null;
+
+        if(valueInFolder) {
+            return valueInFolder;
+        }
+
+        value = public.blog.posts._data[blogName][key];
+    }
+
+    return value;
+
+    // let path = current.path;
+    // let length = path.length - 2;
+    // let i = length;
+
+    // while(i => 0){
+    //   var root = public;
+
+    //   for(var j = 0; j < i; j++){
+    //       root = root[path[j]];
+    //   }
+
+    //   value = root[path[length]] ? root[path[length]][key] : null;
+
+    //   if(value){
+    //     return value;
+    //   }
+    //   i--;
+    // }
+
+
+
+    // var x = JSON.stringify({x: public.blog.posts._data, y: current}, null, '\t')
+
+}
+%>

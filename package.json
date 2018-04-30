@@ -1,0 +1,25 @@
+{
+  "name": "asure",
+  "version": "1.0.0",
+  "description": "asure.io WebSite",
+  "main": "index.js",
+  "scripts": {
+    "build": "harp compile src docs",
+    "start": "harp server src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://echtnice@vs-ssh.visualstudio.com:22/_ssh/asure"
+  },
+  "keywords": [],
+  "author": "Paul Mizel <pmizel@asure.io>",
+  "contributors": [
+    "Fabian Raetz <fraetz@asure.io>",
+    "Gamal Schmuck <gschmuck@asure.io>",
+    "Andrey Kuchaev <akuchaev@asure.io>"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "harp": "^0.25.0"
+  }
+}
