@@ -15,7 +15,7 @@
                 <% for(var i in headerLinks){ %>
                 <li class="nav-item">
                     <a class="nav-link <%- current.path[0] == headerLinks[i].urlSegment ? 'active' : '' %>"
-                       href="<%= fixUrl(current.path, headerLinks[i].url) %>">
+                       href="<%= headerLinks[i].url %>">
                         <%= headerLinks[i].title %>
                     </a>
                 </li>
