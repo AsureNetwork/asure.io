@@ -341,6 +341,11 @@ section {
 
 .blc-news {
   background: #66abd8;
+  .social {
+    a {
+      color: #444;
+    }
+  }
   @include add;
 }
 
@@ -500,8 +505,8 @@ section {
     img {
       //border-radius: 10px;
       margin-bottom: 20px;
-      //-webkit-filter: grayscale(100%); /* Chrome, Opera, Safari  */
-      //filter: grayscale(100%);
+      -webkit-filter: grayscale(100%); /* Chrome, Opera, Safari  */
+      filter: grayscale(100%);
     }
 
     img:hover {
