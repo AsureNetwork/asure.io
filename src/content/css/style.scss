@@ -1105,6 +1105,15 @@ section {
   animation: fa-beat 5s ease infinite;
 }
 
+table.dist {
+  height: 60px;
+  td {
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+  }
+}
+
 @keyframes fa-beat {
   0% {
     transform: scale(1);
