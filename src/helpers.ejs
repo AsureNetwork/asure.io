@@ -10,6 +10,15 @@ fixUrl = function(path, url){
     return fixedUrl;
 }
 
+prefixUrl = function(){
+//work with current.path in helper directly is not correct
+var pathPrefix = "";
+ for (var i = 0; i < current.path.length-1; i++) {
+  pathPrefix += "../";
+ }
+ return pathPrefix;
+}
+
 getBlogData = function(path){
     //work with current.path in helper directly is not correct
     let blogName = path[path.length - 2];
