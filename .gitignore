@@ -59,7 +59,6 @@ typings/
 .env
 old
 
-/docs
 /.vs
 
 # IDE folders

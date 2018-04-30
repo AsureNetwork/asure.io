@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg  version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="643" height="550" viewBox="0 0 643 550"
+	 overflow="visible" enable-background="new 0 0 643 550" xml:space="preserve">
+<title>Group 40</title>
+<desc>Created with Sketch.</desc>
+<g id="Fastlane-HP-Build">
+	<g id="Fastlane-Build" transform="translate(-763.000000, -2464.000000)">
+		<g id="Distribute" transform="translate(-50.000000, 2246.000000)">
+			<g id="Group-40" transform="translate(815.000000, 219.000000)">
+				<g id="Page-1" transform="translate(153.000000, 0.000000)">
+					<g id="Group-22" transform="translate(0.000000, 0.801000)">
+						<path id="Fill-2" opacity="0.3116" fill="#FFFFFF" enable-background="new    " d="M230.121,420.077H113.89
+							c-19.25,0-35-15.75-35-35V60.158c0-19.25,15.75-35,35-35H230.12c19.25,0,34.999,15.75,34.999,35v324.919
+							C265.12,404.327,249.371,420.077,230.121,420.077"/>
+						<path id="Fill-4" fill="#09094A" d="M218.382,401.452h-116.23c-19.25,0-35-15.75-35-35V41.533c0-19.25,15.75-35,35-35h116.229
+							c19.25,0,35,15.75,35,35v324.919C253.382,385.702,237.632,401.452,218.382,401.452"/>
+						<path id="Stroke-6" fill="none" stroke="#FEFEFE" stroke-width="4" d="M229.84,370.532H65.172c-2.75,0-5-2.25-5-5V52.199
+							c0-2.75,2.25-5,5-5H229.84c2.75,0,5,2.25,5,5v313.333C234.84,368.282,232.59,370.532,229.84,370.532z"/>
+						<path id="Stroke-10" fill="none" stroke="#FEFEFE" stroke-width="4" d="M209.692,412.744H85.151c-19.25,0-35-15.75-35-35
+							V35.199c0-19.25,15.75-35,35-35h124.541c19.25,0,35,15.75,35,35v342.545C244.692,396.994,228.942,412.744,209.692,412.744z"/>
+					</g>
+				</g>
+				<polygon id="Page-1_1_" fill="none" stroke="#E91F62" stroke-width="3" points="464,154 464,235.688 511.291,235.688 
+					526.75,251.593 542.186,235.688 589.5,235.688 589.5,154 				"/>
+				<polygon id="Page-1_2_" opacity="0.5118" fill="#E91F62" enable-background="new    " points="539,213 539,279.275 
+					577.367,279.275 589.911,292.179 602.434,279.275 640.821,279.275 640.821,213 				"/>
+				<polygon id="Page-1_3_" fill="none" stroke="#7CC6B7" stroke-width="3" points="0,125 0,206.688 47.29,206.688 62.75,222.593 
+					78.186,206.688 125.499,206.688 125.499,125 				"/>
+				<polygon id="Page-1_4_" fill="#7CC6B7" points="66,51 66,89.937 88.541,89.937 95.91,97.519 103.268,89.937 125.82,89.937 
+					125.82,51 				"/>
+				<polygon id="Page-1_5_" fill="#7CC6B7" points="75,245 75,283.937 97.541,283.937 104.91,291.519 112.268,283.937 
+					134.82,283.937 134.82,245 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<polygon id="Page-1_6_" fill="#E91F62" points="241,70 241,108.937 263.541,108.937 270.91,116.519 278.268,108.937 300.82,108.937 
+	300.82,70 "/>
+<polygon id="Page-1_7_" fill="#7CC6B7" points="315,117 315,155.937 337.541,155.937 344.91,163.519 352.268,155.937 
+	374.82,155.937 374.82,117 "/>
+<polygon fill="none" stroke="#7CC6B7" points="313.032,349.073 313.032,316.078 341.606,332.575 "/>
+<polygon fill="none" stroke="#7CC6B7" points="312.942,282.928 312.942,315.922 284.368,299.425 "/>
+<polygon fill="none" stroke="#7CC6B7" points="284.326,332.546 312.9,316.049 312.9,349.043 "/>
+<polygon fill="none" stroke="#7CC6B7" points="313.051,316.039 341.625,299.542 341.625,332.536 "/>
+<polygon fill="none" stroke="#7CC6B7" points="341.621,299.488 313.047,315.985 313.047,282.991 "/>
+<polygon fill="none" stroke="#7CC6B7" points="312.895,315.994 284.322,332.491 284.322,299.497 "/>
+</svg>
