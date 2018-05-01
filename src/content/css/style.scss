@@ -347,6 +347,21 @@ section {
     }
   }
   @include add;
+
+  p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .form-inline {
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+    .social {
+      padding-top: 100px;
+    }
+  }
 }
 
 .blc-one, .blc-three {
