@@ -937,8 +937,22 @@ section {
 .blc-graph {
   padding: 80px 0;
 
+  h2 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #444;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    @media (max-width: 768px) {
+      padding-top: 30px;
+    }
+  }
+
+
   .item {
-    padding: 13px 0 22px;
+    //padding: 13px 0 22px;
+    padding: 5px 0 5px;
   }
 
   .head {
@@ -948,6 +962,7 @@ section {
 
   .name {
     color: #868686;
+    font-weight: bold;
   }
 
   .parcent {
@@ -1115,6 +1130,42 @@ section {
 
 .red {
   color: #e91f62;
+}
+
+.bg-red {
+  background-color: #e91f62;
+}
+
+.bg-color1 {
+  background-color: #69acd6;
+}
+
+.bg-color2 {
+  background-color: #7ec5b7;
+}
+
+.bg-color3 {
+  background-color: #e91f62;
+}
+
+.bg-color4 {
+  background-color: #d49b40;
+}
+
+.bg-color5 {
+  background-color: #99c759;
+}
+
+.bg-color6 {
+  background-color: #a90cfb;
+}
+
+.bg-color7 {
+  background-color: #5bfb56;
+}
+
+.small-text{
+  font-size: 0.8em;
 }
 
 .justify {
