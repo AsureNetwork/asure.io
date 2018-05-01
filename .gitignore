@@ -64,3 +64,6 @@ old
 # IDE folders
 .idea
 .vscode
+
+#lock
+package-lock.json
