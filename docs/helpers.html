@@ -217,8 +217,6 @@
     </div>
 </footer>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -268,33 +266,34 @@
             });
         }
 
-        $(document).on("scroll", onScroll);
+        if (location.pathname === '/') {
+            $(document).on("scroll", onScroll);
 
-        // Smooth scrolling. From https://css-tricks.com/snippets/jquery/smooth-scrolling/#comment-197181
-        $('.blc-navbar .navbar-nav a[href*="#"]:not([href="#"])').click(function (e) {
-            if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
-                e.preventDefault();
+            // Smooth scrolling. From https://css-tricks.com/snippets/jquery/smooth-scrolling/#comment-197181
+            $('.blc-navbar .navbar-nav a[href*="#"]:not([href="#"])').click(function (e) {
+                if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
+                    e.preventDefault();
 
-                $(document).off("scroll");
-                $('a').each(function () {
-                    $(this).removeClass('active');
-                });
-                $(this).addClass('active');
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top + 5
-                    }, 1000, 'swing', function () {
-                        window.location.hash = target.attr('id');
-                        $(document).on("scroll", onScroll);
+                    $(document).off("scroll");
+                    $('a').each(function () {
+                        $(this).removeClass('active');
                     });
-                    return true;
-                }
-            }
-        });
+                    $(this).addClass('active');
 
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top + 5
+                        }, 1000, 'swing', function () {
+                            window.location.hash = target.attr('id');
+                            $(document).on("scroll", onScroll);
+                        });
+                        return true;
+                    }
+                }
+            });
+        }
 
         // Morris.Donut({
         //     element: 'graph_chart',
