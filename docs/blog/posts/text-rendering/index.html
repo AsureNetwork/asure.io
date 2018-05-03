@@ -256,9 +256,24 @@
         <i class="fa fa-heart fa-beat red"></i> in Germany + Ukraine
     </div>
 </footer>
-<nav class="navbar navbar-social fixed-bottom navbar-light d-sm-flex">
-    <div class="container">
 
+<nav class="navbar-footer fixed-bottom">
+    <div class="navbar navbar-cookies navbar-expand-lg navbar-light d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                    We use cookies to help us improve, promote, and protect our services.
+                    By continuing to use the site, you agree to our
+                    <a href="../../../cookie-policy/">cookie policy</a>.
+                    <a id="acceptCookiePolicy" href="#"><strong>Accept</strong></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <nav class="navbar navbar-social navbar-light d-sm-flex">
+        <div class="container">
         <form class="form-inline"
               action="https://asure.us17.list-manage.com/subscribe/post?u=934c8a5f49ce69acfe8f99c16&amp;id=f60f297166"
               method="post" target="_blank" rel="noopener" novalidate="">
@@ -296,7 +311,7 @@
         </div>
     </div>
 </nav>
-
+</nav>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -309,7 +324,29 @@
         crossorigin="anonymous"></script>
 <script src="../../../js/libs/slick/slick.min.js"></script>
 <script>
+    if (document.cookie.indexOf('enable_cookies=') <= 0) {
+        $('.navbar-cookies').removeClass('d-none');
+    }
+
     $(document).ready(function () {
+        $('.navbar-cookies a#acceptCookiePolicy').click(function () {
+            function setCookie(name, value, days) {
+                var expires = "";
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            }
+
+            setCookie('enable_cookies', true, 365 * 3);
+            $('.navbar-cookies').addClass('d-none');
+            return false;
+
+        });
+
+
         $('.blc-articles .items').slick({
             dots: true,
             infinite: true,
