@@ -178,7 +178,7 @@ body {
   background-position-x: -548px;
 
   @media (min-width: 768px) {
-    padding-bottom: 52px;
+    padding-bottom: 54px;
   }
 }
 
@@ -305,8 +305,27 @@ section {
   }
 }
 
+.navbar-cookies {
+  background-color: #f7f7f7;
+  opacity: 0;
+
+  -webkit-animation: fadein2 250ms ease-out 4s forwards;
+  animation: fadein2 250ms ease-out 4s forwards;
+
+  .container {
+    margin-bottom: 5em;
+    font-size: 0.8em;
+  }
+
+  p {
+    margin: 0;
+  }
+;
+}
+
 .navbar-social {
   background-color: #262b2f;
+  border-top: 2px solid #e61664;
   opacity: 0;
 
   -webkit-animation: fadein2 250ms ease-out 4s forwards;
