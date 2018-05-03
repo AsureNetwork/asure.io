@@ -177,6 +177,9 @@ body {
   background-size: 1524px;
   background-position-x: -548px;
 
+  @media (min-width: 768px) {
+    padding-bottom: 52px;
+  }
 }
 
 a {
@@ -299,6 +302,26 @@ section {
     color: #f7f7f7;
     margin-bottom: 10px;
     text-transform: uppercase;
+  }
+}
+
+.navbar-social {
+  background-color: #262b2f;
+  opacity: 0;
+
+  -webkit-animation: fadein2 250ms ease-out 4s forwards;
+  animation: fadein2 250ms ease-out 4s forwards;
+
+
+  @media (max-width: 576px) {
+    .form-inline {
+      width: 100%;
+      flex-wrap: nowrap;
+    }
+  }
+
+  .fb-like {
+    padding-right: 4px;
   }
 }
 
@@ -506,6 +529,53 @@ section {
   to {
     opacity: 1;
     top: 0;
+  }
+}
+
+
+
+@keyframes fadein2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadein2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

@@ -9,7 +9,7 @@
     <meta name="keywords" content="<%= getByKey("keywords", keywords) %>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="google-site-verification" content="zyegL0vMzUOt13vhaQAldjM05Q8GUB1vWtt2XHmo3fM" />
+    <meta name="google-site-verification" content="zyegL0vMzUOt13vhaQAldjM05Q8GUB1vWtt2XHmo3fM"/>
 
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<%= fixUrl(current.path, 'content/img/ico/ms-icon-144x144.png') %>">
@@ -48,14 +48,16 @@
           rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
           integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link rel="stylesheet" href="<%= prefixUrl()%>content/css/style.css">
-    <link rel="stylesheet" href="<%= prefixUrl()%>js/libs/slick/slick-all.css">
+    <link rel="stylesheet" href="<%= prefixUrl() %>content/css/style.css">
+    <link rel="stylesheet" href="<%= prefixUrl() %>js/libs/slick/slick-all.css">
 </head>
 <body id="top">
 
 <%- partial("/shared/_header") %>
 <%- yield %>
 <%- partial("/shared/_footer") %>
+<%- partial("/shared/_social-navbar") %>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -66,7 +68,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-<script src="<%= prefixUrl()%>js/libs/slick/slick.min.js"></script>
+<script src="<%= prefixUrl() %>js/libs/slick/slick.min.js"></script>
 <script>
     $(document).ready(function () {
         $('.blc-articles .items').slick({
