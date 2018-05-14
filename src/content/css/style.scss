@@ -149,8 +149,8 @@ blockquote {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #c8001e !important;
-  border-color: #ad1656 !important;
+  background-color: #159cd1 !important;
+  border-color: #146492 !important;
 }
 
 .head {
@@ -238,14 +238,14 @@ section {
   .hero {
     position: relative;
     color: #fff;
-    padding-top: 220px;
+    padding-top: 150px;
     text-align: center;
     @media (max-width: 768px) {
       padding-top: 60px;
     }
     h1 {
       font-weight: 100;
-      font-size: 80px;
+      font-size: 60px;
       color: #66abd8;
     }
 
@@ -1111,6 +1111,18 @@ section {
 
 .features .item {
   min-height: 400px !important;
+}
+
+.bordered {
+  border: 1px solid #888;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding: 5px;
+}
+
+.gray {
+  color: #444;
 }
 
 .red {
