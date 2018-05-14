@@ -22,8 +22,8 @@
     bottom: -16px;
     position: absolute;
     left: 50%;
-    height: 2px;
-    background-color: #69acd6; //#072a4d; //#67abd6;
+    height: 1px;
+    background-color: #444; //#69acd6; //#072a4d; //#67abd6;
   }
 }
 
@@ -137,13 +137,13 @@ blockquote {
 }
 
 .btn-primary {
-  background-color: #e61664;
-  border-color: #ad1656;
+  background-color: #146492;
+  border-color: #146492;
   color: #fff;
 
   &.disabled, &:disabled {
-    background-color: #e61664;
-    border-color: #ad1656;
+    background-color: #146492;
+    border-color: #146492;
   }
 }
 
@@ -176,7 +176,7 @@ body {
   background-repeat: repeat-y;
   background-size: 1524px;
   background-position-x: -548px;
-
+  font-weight: 100;
 }
 
 a {
@@ -279,8 +279,8 @@ section {
     margin-bottom: 30px;
     padding-bottom: 0px;
     font-size: 40px;
-    color: #69acd6; //#444444;
-    font-weight: 800;
+    color: #444444; //#69acd6; //#444444;
+    font-weight: 100;
   }
   h1.title.white {
     @include hrwhite;
@@ -295,7 +295,7 @@ section {
     //margin-bottom: 30px;
     //padding-bottom: 0px;
     font-size: 26px;
-    font-weight: 800;
+    font-weight: 100;
     color: #f7f7f7;
     margin-bottom: 10px;
     text-transform: uppercase;
