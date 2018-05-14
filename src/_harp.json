@@ -10,14 +10,14 @@
         "url": "#about",
         "urlSegment": ""
       },
-      "news": {
-        "title": "News",
-        "url": "#news",
+      "solutions": {
+        "title": "Solutions",
+        "url": "#solutions",
         "urlSegment": ""
       },
-      "feature": {
-        "title": "Features",
-        "url": "#features",
+      "platform": {
+        "title": "Platform",
+        "url": "#platform",
         "urlSegment": ""
       },
       "team": {
