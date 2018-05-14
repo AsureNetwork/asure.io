@@ -6,8 +6,11 @@ img {
 body {
     font: 400 16px/1.5 "Roboto",Helvetica,Arial,sans-serif;
     margin: 0;
-    padding: 60px 0 0 0;
+    padding: 660px 0 0 0;
     overflow: hidden;
+    background-image: url(../content/img/hero-bg.jpg);
+    background-position-x: center;
+    background-size: contain;
 }
 
 hr {
