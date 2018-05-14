@@ -137,20 +137,20 @@ blockquote {
 }
 
 .btn-primary {
-  background-color: #146492;
-  border-color: #146492;
+  background-color: #7FC6B7;
+  border-color: #7FC6B7;
   color: #fff;
 
   &.disabled, &:disabled {
-    background-color: #146492;
-    border-color: #146492;
+    background-color: #7FC6B7;
+    border-color: #7FC6B7;
   }
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #c8001e !important;
-  border-color: #ad1656 !important;
+  background-color: #93E5D4 !important;
+  border-color: #93E5D4 !important;
 }
 
 .head {
@@ -180,7 +180,7 @@ body {
 }
 
 a {
-  color: #e61664;
+  color: #7FC6B7;
 }
 
 section {
@@ -302,6 +302,41 @@ section {
   }
 }
 
+.navbar-footer {
+  opacity: 0;
+  -webkit-animation: fadein2 250ms ease-out 4s forwards;
+  animation: fadein2 250ms ease-out 4s forwards;
+
+  .navbar-cookies {
+    background-color: #f7f7f7;
+    //border-top: 2px solid #e61664;
+
+    .container {
+      font-size: 0.8em;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .navbar-social {
+    background-color: #262b2f;
+    border-top: 2px solid #e61664;
+
+    @media (max-width: 576px) {
+      .form-inline {
+        width: 100%;
+        flex-wrap: nowrap;
+      }
+    }
+
+    .fb-like {
+      padding-right: 4px;
+    }
+  }
+}
+
 .blc-feature {
   padding: 80px 0 140px;
 
@@ -401,12 +436,12 @@ section {
   padding-top: 50px;
   text-align: center;
   a {
-    font-size: 30px;
+    font-size: 28px;
     margin-right: 5px;
     color: #ababa9;
 
     &:hover {
-      color: #ec2760;
+      color: #93E5D4;
     }
 
     svg {
@@ -506,6 +541,51 @@ section {
   to {
     opacity: 1;
     top: 0;
+  }
+}
+
+@keyframes fadein2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadein2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -1019,7 +1099,7 @@ section {
   }
 }
 
-.blc-faq {
+.blc-faq, .blc-cookie-policy {
   background-color: #f5f6fa;
   padding: 80px 0;
 
@@ -1036,7 +1116,7 @@ section {
       font-size: 15px;
 
       a {
-        color: #e91f62;
+        color: #7FC6B7;
       }
     }
 
@@ -1115,6 +1195,10 @@ section {
 
 .red {
   color: #e91f62;
+}
+
+.green {
+  color: #7FC6B7;
 }
 
 .justify {
