@@ -17,13 +17,16 @@
 
   &:after {
     content: '';
-    width: 400px;
-    margin-left: -200px;
+    //width: 400px;
+    //margin-left: -200px;
+    width: 100%;
+    margin-left: -50%;
     bottom: -16px;
     position: absolute;
     left: 50%;
-    height: 1px;
+    height: 0px;
     background-color: #444; //#69acd6; //#072a4d; //#67abd6;
+    opacity: 0.65;
   }
 }
 
@@ -172,7 +175,7 @@ body {
   font-size: 16px;
   background: #fff;
 
-  background-image: url("../../logo/asure-logo-bg.svg");
+  //background-image: url("../../logo/asure-logo-bg.svg");
   background-repeat: repeat-y;
   background-size: 1524px;
   background-position-x: -548px;
@@ -188,8 +191,31 @@ a {
   font-weight: 500;
 }
 
+ul{
+  list-style-position: inside;
+}
+
+h6{
+  font-size: 16px;
+}
+h5{
+  font-size: 18px;
+}
+h4{
+  font-size: 20px;
+}
+
 section {
   position: relative;
+}
+
+.img-thumbnail {
+  padding: .25rem;
+  background-color: #444;
+  border: 1px solid #dee2e6;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
 }
 
 .blc-navbar {
@@ -286,7 +312,7 @@ section {
     @include hr;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding-bottom: 0px;
     font-size: 40px;
     color: #444444; //#69acd6; //#444444;
@@ -348,8 +374,52 @@ section {
 }
 
 .blc-solutions {
-  padding: 80px 0 140px;
+  padding: 80px 0 40px;
   background: #fbfbfb;
+  .features {
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .item {
+      text-align: center;
+      background-color: #f7f7f7;
+      padding: 20px 25px;
+      min-height: 250px;
+      //border-radius: 4px;
+      color: #444;
+
+      .image {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.blc-token {
+  padding: 20px 0 40px;
+  background: #ebebeb;
+
+  .features {
+    .title {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .item {
+      text-align: center;
+      background-color: #f7f7f7;
+      padding: 20px 25px;
+      min-height: 330px;
+      //border-radius: 4px;
+      color: #444;
+
+      .image {
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
 .blc-feature {
@@ -373,7 +443,7 @@ section {
       text-align: center;
       background-color: #f7f7f7;
       padding: 30px 25px;
-      min-height: 270px;
+      min-height: 350px;
       //border-radius: 4px;
       color: #444;
 
@@ -747,7 +817,7 @@ section {
       color: #444;
     }
 
-    p {
+    p, ul {
       padding: 0 50px 0 80px;
       color: #444;
       //line-height: 22px;
@@ -1203,10 +1273,10 @@ section {
 .btn, .nav-item nav-link, .form-control {
   border-radius: 0px;
 }
-
+/*
 .features .item {
   min-height: 400px !important;
-}
+}*/
 
 .bordered {
   border: 1px solid #888;
