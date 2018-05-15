@@ -376,6 +376,9 @@ section {
 .blc-solutions {
   padding: 80px 0 40px;
   background: #fbfbfb;
+  .row.row-padding{
+    padding: 30px 0 30px;
+  }
   .features {
     .title {
       font-weight: bold;
