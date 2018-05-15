@@ -209,6 +209,15 @@ section {
   position: relative;
 }
 
+.img-thumbnail {
+  padding: .25rem;
+  background-color: #444;
+  border: 1px solid #dee2e6;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
 .blc-navbar {
 
   .navbar-brand {
@@ -378,7 +387,7 @@ section {
       text-align: center;
       background-color: #f7f7f7;
       padding: 20px 25px;
-      min-height: 130px;
+      min-height: 250px;
       //border-radius: 4px;
       color: #444;
 
