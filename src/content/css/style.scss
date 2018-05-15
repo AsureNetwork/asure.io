@@ -128,13 +128,6 @@
   color: #ffffff;
 }
 
-blockquote {
-  color: #fff;
-  font-style: italic;
-  margin: 60px 0;
-  text-align: center;
-}
-
 .blc-footer a, .social a {
   text-decoration: none;
 }
@@ -182,7 +175,7 @@ body {
   font-weight: 100;
 }
 
-b{
+b {
   font-weight: 500;
 }
 
@@ -191,17 +184,19 @@ a {
   font-weight: 500;
 }
 
-ul{
+ul {
   list-style-position: inside;
 }
 
-h6{
+h6 {
   font-size: 16px;
 }
-h5{
+
+h5 {
   font-size: 18px;
 }
-h4{
+
+h4 {
   font-size: 20px;
 }
 
@@ -281,7 +276,7 @@ section {
       color: #66abd8;
       text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
     }
-    h2{
+    h2 {
       font-weight: 100;
       text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
     }
@@ -376,7 +371,7 @@ section {
 .blc-solutions {
   padding: 80px 0 40px;
   background: #fbfbfb;
-  .row.row-padding{
+  .row.row-padding {
     padding: 30px 0 30px;
   }
   .features {
@@ -400,6 +395,7 @@ section {
     }
   }
 }
+
 .blc-token {
   padding: 20px 0 40px;
   background: #ebebeb;
@@ -830,6 +826,10 @@ section {
   }
 }
 
+blockquote {
+  font-style: italic;
+}
+
 .blc-articles {
   padding-bottom: 60px;
   overflow: hidden;
@@ -910,11 +910,6 @@ section {
     font-size: 16px;
   }
 
-  p {
-    font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: #ffffff;
-  }
 
   .timeline {
     line-height: 1.4em;
@@ -934,6 +929,12 @@ section {
 
     &:last-child {
       padding-bottom: 0;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: #ffffff;
     }
   }
 
@@ -980,6 +981,16 @@ section {
 
     .timeline-item:last-child &:after {
       content: none;
+    }
+
+  }
+
+  blockquote {
+    color: #fff;
+    margin: 60px 0;
+
+    footer {
+      color: #fff;
     }
   }
 
@@ -1276,6 +1287,7 @@ section {
 .btn, .nav-item nav-link, .form-control {
   border-radius: 0px;
 }
+
 /*
 .features .item {
   min-height: 400px !important;
