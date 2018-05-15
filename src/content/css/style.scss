@@ -370,6 +370,7 @@ section {
 
 .blc-solutions {
   padding: 80px 0 40px;
+
   background: #fbfbfb;
   .row.row-padding {
     padding: 30px 0 30px;
@@ -388,6 +389,7 @@ section {
       padding: 20px 25px;
       min-height: 250px;
       //border-radius: 4px;
+
       color: #444;
 
       .image {
@@ -592,19 +594,17 @@ section {
 
   border: 1px solid #ccc;
 
-  &:hover .flipper,
-  &.hover .flipper {
+  &:hover,
+  &.hover {
     cursor: pointer;
   }
 
-  &.clicked .flipper {
+  &.clicked {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
-
-  .flipper {
     -webkit-transition: 0.6s;
     -webkit-transform-style: preserve-3d;
 
@@ -617,14 +617,15 @@ section {
     transition: 0.6s;
     transform-style: preserve-3d;
 
-    position: relative;
-
     .front, .back {
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
       -o-backface-visibility: hidden;
       backface-visibility: hidden;
 
+      margin: inherit;
+      padding: inherit;
+      width: 100%;
       position: absolute;
       top: 0;
       left: 0;
@@ -642,7 +643,6 @@ section {
 
       background: #f8f8f8;
     }
-  }
 }
 
 @keyframes fadein {
@@ -1324,6 +1324,15 @@ blockquote {
     }
   }
 
+  .blc-solutions, .blc-token {
+    .features .item {
+      margin-bottom: 20px;
+
+    }
+  }
+
+
+
   .blc-subscribe {
     background: #f3f8fa;
 
@@ -1395,6 +1404,10 @@ blockquote {
 
 .justify {
   text-align: justify;
+}
+
+.text-small {
+  font-size: 0.8rem;
 }
 
 .fa-beat {
