@@ -832,7 +832,11 @@ section {
 .default-text{
   font-size: 16px;
 }
-
+.bg-particles {
+  background-image: url("../img/bg-particles.png");
+  background-position: top center;
+  background-repeat: repeat-y;
+}
 blockquote {
   font-style: italic;
 }
