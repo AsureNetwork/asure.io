@@ -367,6 +367,26 @@ section {
 .blc-solutions {
   padding: 80px 0 40px;
   background: #fbfbfb;
+  .features {
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .item {
+      text-align: center;
+      background-color: #f7f7f7;
+      padding: 20px 25px;
+      min-height: 130px;
+      //border-radius: 4px;
+      color: #444;
+
+      .image {
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 .blc-token {
   padding: 20px 0 40px;
