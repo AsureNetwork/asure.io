@@ -397,9 +397,18 @@ section {
   }
 }
 
+.py{
+  background: #e9e4dc;
+}
+.pb{
+  background: #aec0cc;
+}
+.pg{
+  background: #a6afa4;
+}
+
 .blc-token {
-  padding: 20px 0 40px;
-  background: #ebebeb;
+  padding: 80px 0 40px;
 
   .features {
     .title {
@@ -462,7 +471,6 @@ section {
 }
 
 .blc-news {
-  background: #66abd8;
   .social {
     a {
       color: #444;
