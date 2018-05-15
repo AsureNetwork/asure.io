@@ -205,9 +205,9 @@ section {
 }
 
 .img-thumbnail {
-  padding: .25rem;
-  background-color: #444;
-  border: 1px solid #dee2e6;
+  padding: 0;
+  background-color: #eee;
+  border: 1px solid #eeeeee;
   max-width: 100%;
   height: auto;
   border-radius: 0;
@@ -382,6 +382,7 @@ section {
       margin-bottom: 15px;
     }
     .item {
+      border: 1px solid #eeeeee;
       text-align: center;
       background-color: #f7f7f7;
       padding: 20px 25px;
@@ -407,6 +408,7 @@ section {
       margin-bottom: 15px;
     }
     .item {
+      border: 1px solid #eeeeee;
       text-align: center;
       background-color: #f7f7f7;
       padding: 20px 25px;
@@ -439,6 +441,7 @@ section {
       margin-bottom: 15px;
     }
     .item {
+      border: 1px solid #eeeeee;
       text-align: center;
       background-color: #f7f7f7;
       padding: 30px 25px;
@@ -824,6 +827,10 @@ section {
       text-align: justify;
     }
   }
+}
+
+.default-text{
+  font-size: 16px;
 }
 
 blockquote {
