@@ -9,7 +9,7 @@
     <meta name="keywords" content="Imprint">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="google-site-verification" content="zyegL0vMzUOt13vhaQAldjM05Q8GUB1vWtt2XHmo3fM" />
+    <meta name="google-site-verification" content="zyegL0vMzUOt13vhaQAldjM05Q8GUB1vWtt2XHmo3fM"/>
 
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../content/img/ico/ms-icon-144x144.png">
@@ -217,6 +217,9 @@
             <a href="https://twitter.com/asureteam" target="_blank" rel="noopener" alt="twitter">
                 <i class="fab fa-twitter"></i>
             </a>
+            <a href="https://www.linkedin.com/company/asure" target="_blank" rel="noopener" alt="twitter">
+                <i class="fab fa-linkedin"></i>
+            </a>
             <a href="https://www.medium.com/asureteam" target="_blank" rel="noopener" alt="medium">
                 <i class="fab fa-medium"></i>
             </a>
@@ -303,6 +306,62 @@
     </div>
 </footer>
 
+<nav class="navbar-footer fixed-bottom">
+    <div class="navbar navbar-cookies navbar-expand-lg navbar-light d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                    We use cookies to help us improve, promote, and protect our services.
+                    By continuing to use the site, you agree to our
+                    <a href="../cookie-policy/">cookie policy</a>.
+                    <a id="acceptCookiePolicy" href="#"><strong>Accept</strong></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <nav class="navbar navbar-social navbar-light d-sm-flex">
+        <div class="container">
+        <form class="form-inline"
+              action="https://asure.us17.list-manage.com/subscribe/post?u=934c8a5f49ce69acfe8f99c16&amp;id=f60f297166"
+              method="post" target="_blank" rel="noopener" novalidate="">
+            <span class="d-none d-lg-inline" style="color: #fff;padding-right: 10px;">Stay in touch</span>
+            <input type="email" value="" name="EMAIL" class="form-control mr-sm-2"
+                   placeholder="Email address" required="">
+
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div class="hidden" aria-hidden="true">
+                <input type="text" name="b_934c8a5f49ce69acfe8f99c16_f60f297166" tabindex="-1" value="">
+            </div>
+            <input type="submit" value="SUBSCRIBE" name="subscribe" class="btn btn-primary my-2 my-sm-0">
+        </form>
+
+        <div class="d-none d-md-flex navbar-social-container">
+            <div class="fb-like" data-href="https://www.facebook.com/asureteam" data-layout="button" data-action="like"
+                 data-size="large" data-show-faces="true" data-share="true"></div>
+            <div id="fb-root"></div>
+            <script>(function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v3.0';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+
+            <a href="https://twitter.com/AsureTeam?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+               data-show-count="false"
+               data-size="large">
+                Follow @AsureTeam
+            </a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</nav>
+</nav>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -314,7 +373,29 @@
         crossorigin="anonymous"></script>
 <script src="../js/libs/slick/slick.min.js"></script>
 <script>
+    if (document.cookie.indexOf('enable_cookies=') <= 0) {
+        $('.navbar-cookies').removeClass('d-none');
+    }
+
     $(document).ready(function () {
+        $('.navbar-cookies a#acceptCookiePolicy').click(function () {
+            function setCookie(name, value, days) {
+                var expires = "";
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            }
+
+            setCookie('enable_cookies', true, 365 * 3);
+            $('.navbar-cookies').addClass('d-none');
+            return false;
+
+        });
+
+
         $('.blc-articles .items').slick({
             dots: true,
             infinite: true,
