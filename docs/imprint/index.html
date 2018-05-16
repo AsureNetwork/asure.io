@@ -214,7 +214,7 @@
         <div class="row">
     <div class="col-md-12">
         <div class="social">
-            <a href="https://twitter.com/asureteam" target="_blank" rel="noopener" alt="twitter">
+            <a href="https://twitter.com/asure_io" target="_blank" rel="noopener" alt="twitter">
                 <i class="fab fa-twitter"></i>
             </a>
             <a href="https://www.linkedin.com/company/asure" target="_blank" rel="noopener" alt="twitter">
@@ -350,10 +350,10 @@
                     js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v3.0';
                     fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));</script>
-            <a href="https://twitter.com/AsureTeam?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+            <a href="https://twitter.com/Asure_io?ref_src=twsrc%5Etfw" class="twitter-follow-button"
                data-show-count="false"
                data-size="large">
-                Follow @AsureTeam
+                Follow @Asure_io
             </a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
@@ -393,6 +393,10 @@
             return false;
 
         });
+
+        $('.flip-container').click(function () {
+            this.classList.toggle("clicked");
+        })
 
 
         $('.blc-articles .items').slick({

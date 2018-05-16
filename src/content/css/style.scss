@@ -66,7 +66,7 @@
 
 @mixin section {
   padding: 80px 0 80px;
-  color: #fff;
+  color: #444;
 
   .title {
     font-size: 36px;
@@ -367,7 +367,7 @@ section {
     //padding-bottom: 0px;
     font-size: 26px;
     font-weight: 100;
-    color: #f7f7f7;
+    color: #444;
     margin-bottom: 10px;
     text-transform: uppercase;
   }
@@ -1071,7 +1071,8 @@ blockquote {
 
   &:before {
     content: '';
-    background-color: rgba(105, 172, 214, 0.93);
+    //background-color: rgba(105, 172, 214, 0.93);
+    background-color: rgba(165, 203, 217, 0.93);
     position: absolute;
     top: 0;
     left: 0;
@@ -1119,7 +1120,7 @@ blockquote {
     p {
       font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
       font-size: 16px;
-      color: #ffffff;
+      color: #444;
     }
   }
 
@@ -1171,11 +1172,11 @@ blockquote {
   }
 
   blockquote {
-    color: #fff;
+    color: #444;
     margin: 60px 0;
 
     footer {
-      color: #fff;
+      color: #444;
     }
   }
 
@@ -1561,3 +1562,6 @@ table.dist {
     transform: scale(1);
   }
 }
+
+
+
