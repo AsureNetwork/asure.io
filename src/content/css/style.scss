@@ -481,7 +481,14 @@ section {
   background: #a6cbd8;
 }
 .bg-green{
-  background: #abc8b0;
+  background: #b3d8b9;
+}
+
+.bg-green-gray{
+  background: #709087;
+}
+.bg-blue-gray{
+  background: #707d90;
 }
 
 .blc-token {
@@ -543,7 +550,7 @@ section {
 }
 
 .blc-zero, .blc-two {
-  background: #69acd6;
+  //background: #69acd6;
   @include add;
 }
 
@@ -572,7 +579,7 @@ section {
 }
 
 .blc-one, .blc-three {
-  background: #7ec5b7;
+  //background: #7ec5b7;
   z-index: 1;
   @include even;
 }
@@ -854,6 +861,7 @@ section {
       margin-bottom: 20px;
       -webkit-filter: grayscale(100%); /* Chrome, Opera, Safari  */
       filter: grayscale(100%);
+      border: 1px solid #888;
     }
 
     img:hover {
