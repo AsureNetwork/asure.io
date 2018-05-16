@@ -90,7 +90,7 @@
 
 @mixin add {
   @include section;
-
+/*
   &:before {
     @include line;
     top: 0;
@@ -100,13 +100,13 @@
     transform-origin: 0 0;
     -webkit-backface-visibility: hidden;
     outline: 1px solid transparent;
-  }
+  }*/
 }
 
 @mixin even {
   position: relative;
   @include section;
-
+/*
   &:before {
     @include line;
     top: 0;
@@ -116,7 +116,7 @@
     transform-origin: 100% 0;
     -webkit-backface-visibility: hidden;
     outline: 1px solid transparent;
-  }
+  }*/
 }
 
 * {
@@ -246,8 +246,9 @@ section {
 }
 
 .blc-hero {
-  background-color: #000000;
+  //background-color: #000000;
   height: 100vh;
+
 
   &__background {
     position: absolute;
@@ -255,6 +256,38 @@ section {
     left: 0;
     width: 100%;
     height: 100vh;
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    /*
+    background: linear-gradient(180deg, #8fddc9, #93c9e3, #93ade3);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 53s ease infinite;
+    -moz-animation: AnimationName 53s ease infinite;
+    -o-animation: AnimationName 53s ease infinite;
+    animation: AnimationName 53s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+      0%{background-position:50% 0%}
+      50%{background-position:51% 100%}
+      100%{background-position:50% 0%}
+    }
+    @-moz-keyframes AnimationName {
+      0%{background-position:50% 0%}
+      50%{background-position:51% 100%}
+      100%{background-position:50% 0%}
+    }
+    @-o-keyframes AnimationName {
+      0%{background-position:50% 0%}
+      50%{background-position:51% 100%}
+      100%{background-position:50% 0%}
+    }
+    @keyframes AnimationName {
+      0%{background-position:50% 0%}
+      50%{background-position:51% 100%}
+      100%{background-position:50% 0%}
+    }
+    */
 
     iframe {
       overflow: hidden;
@@ -264,9 +297,10 @@ section {
 
   .hero {
     position: relative;
-    color: #fff;
+    color: #444;
     padding-top: 50px;
     text-align: center;
+
     @media (max-width: 768px) {
       padding-top: 60px;
     }
@@ -274,11 +308,12 @@ section {
       font-weight: 100;
       font-size: 60px;
       color: #66abd8;
-      text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+      text-shadow: 1px 1px 1px #444;
     }
     h2 {
       font-weight: 100;
-      text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+      color: #444;
+      text-shadow: 1px 1px 1px #444;
     }
     .entry {
       margin-bottom: 38px;
@@ -286,15 +321,15 @@ section {
       p {
         margin-bottom: 24px;
         font-size: 18px;
+        color: #444;
       }
 
       small {
-        color: #b5b5b5;
+        color: #444;
       }
 
       img {
         max-width: 220px;
-        padding-bottom: 20px;
       }
     }
   }
@@ -310,12 +345,12 @@ section {
     margin-bottom: 10px;
     padding-bottom: 0px;
     font-size: 40px;
-    color: #444444; //#69acd6; //#444444;
+    color: #444; //#69acd6; //#444444;
     font-weight: 100;
   }
   h1.title.white {
-    @include hrwhite;
-    color: #ffffff;
+    //@include hrwhite;
+    color: #fff;
     font-size: 40px;
   }
 }
@@ -399,14 +434,50 @@ section {
   }
 }
 
-.py{
-  background: #e9e4dc;
+.bg-dark{
+  background: #241302;
+  h1{
+    color: #c17726 !important;
+  }
+  p,div,li{
+    color: #ddd !important;
+  }
 }
-.pb{
-  background: #aec0cc;
+.text-brown{
+  color: #c17726;
 }
-.pg{
-  background: #a6afa4;
+.bg-brown{
+  background: #c17726;
+}
+.text-brown{
+  color: #c17726;
+}
+.bg-gray{
+  background: #eeeeee;
+}
+.bg-lila{
+  background: #b99595;
+}
+.bg-red{
+  background: #e5d1ca;
+}
+.bg-duck{
+  background: #a9d2d5;
+}
+.bg-violete{
+  background: #c2cbdb;
+}
+.bg-slate{
+  background: #81aed6;
+}
+.bg-yellow{
+  background: #e0ddc9;
+}
+.bg-blue{
+  background: #a6cbd8;
+}
+.bg-green{
+  background: #abc8b0;
 }
 
 .blc-token {
