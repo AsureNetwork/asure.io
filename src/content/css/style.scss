@@ -1,3 +1,5 @@
+$link-color: #2877bd;
+
 @mixin line {
   background: inherit;
   content: '';
@@ -180,7 +182,7 @@ b {
 }
 
 a {
-  color: #6094b4;
+  color: $link-color;
   font-weight: 500;
 }
 
@@ -237,7 +239,7 @@ section {
   text-transform: uppercase;
   //font-weight: bold;
   &.active, &:hover {
-    color: #66abd8;
+    color: $link-color;
   }
 
   /*&:focus {
@@ -621,7 +623,7 @@ section {
     color: #ababa9;
 
     &:hover {
-      color: #146492;
+      color: $link-color;
     }
 
     svg {
@@ -918,7 +920,7 @@ section {
           font-size: 1.3rem;
 
           &:hover, &:active {
-            color: #66abd8;;
+            color: $link-color;
           }
         }
       }
@@ -1401,7 +1403,7 @@ blockquote {
       font-size: 15px;
 
       a {
-        color: #66abd8;
+        color: $link-color;
       }
     }
 
