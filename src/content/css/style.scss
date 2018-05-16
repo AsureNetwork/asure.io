@@ -78,7 +78,6 @@ $link-color: #2877bd;
   p, li, blockquote {
     font-size: 18px;
     line-height: 34px;
-    //list-style-position: square;
     width: 90%;
     list-style: inside square;
   }
@@ -188,10 +187,11 @@ a {
 
 ul {
   list-style-position: inside;
-  li{
+  &.ul{
     list-style: inside square;
   }
 }
+
 
 h6 {
   font-size: 16px;
