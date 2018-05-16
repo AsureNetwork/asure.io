@@ -623,6 +623,7 @@ section {
       -o-backface-visibility: hidden;
       backface-visibility: hidden;
 
+      height: 100%;
       margin: inherit;
       padding: inherit;
       width: 100%;
@@ -633,19 +634,20 @@ section {
       .circle {
         height: 10px;
         width: 10px;
-        background-color: #eee;
+        background-color: #ddd;
         border-radius: 50%;
         display: block;
         position: absolute;
-        right: 20px;
+        bottom: 10px;
+        left: 50%;
         margin-top: -15px;
 
         + .circle {
-          right: 6px;
+          margin-left: -15px;
         }
 
         &.active {
-          background-color: #ddd;
+          background-color: #eee;
         }
       }
     }
