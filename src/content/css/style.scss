@@ -694,12 +694,33 @@ section {
       -o-backface-visibility: hidden;
       backface-visibility: hidden;
 
+      height: 100%;
       margin: inherit;
       padding: inherit;
       width: 100%;
       position: absolute;
       top: 0;
       left: 0;
+
+      .circle {
+        height: 10px;
+        width: 10px;
+        background-color: #ddd;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-top: -15px;
+
+        + .circle {
+          margin-left: -15px;
+        }
+
+        &.active {
+          background-color: #eee;
+        }
+      }
     }
 
     .front {
