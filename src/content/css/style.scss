@@ -1435,8 +1435,6 @@ blockquote {
     }
   }
 
-
-
   .blc-subscribe {
     background: #f3f8fa;
 
@@ -1470,6 +1468,15 @@ blockquote {
 
   section {
     padding: 50px 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .blc-solutions, .blc-token {
+    .features .item {
+      margin-bottom: 20px;
+
+    }
   }
 }
 
