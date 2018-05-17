@@ -259,6 +259,17 @@ section {
   background: #fff;
 }
 
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link, .nav-tabs .nav-link.active {
+  border-radius: 0px;
+  text-transform: uppercase;
+}
+div.tab-content{
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #dae0e5;
+  border-top: 0px;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #09294c;
   text-transform: uppercase;
@@ -706,6 +717,7 @@ section {
 }
 
 .blc-ico {
+  background-color: #f5f6fa;
   padding: 80px 0;
 }
 
@@ -1339,8 +1351,21 @@ blockquote {
 .blc-graph {
   padding: 80px 0;
 
+  h2 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #444;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    @media (max-width: 768px) {
+      padding-top: 30px;
+    }
+  }
+
   .item {
-    padding: 13px 0 22px;
+    //padding: 13px 0 22px;
+    padding: 5px 0 5px;
   }
 
   .head {
@@ -1350,6 +1375,7 @@ blockquote {
 
   .name {
     color: #868686;
+    font-weight: bold;
   }
 
   .parcent {
@@ -1551,6 +1577,42 @@ blockquote {
 
 .green {
   color: #7FC6B7;
+}
+
+.bg-red {
+  background-color: #e91f62;
+}
+
+.bg-color1 {
+  background-color: #69acd6;
+}
+
+.bg-color2 {
+  background-color: #7ec5b7;
+}
+
+.bg-color3 {
+  background-color: #e91f62;
+}
+
+.bg-color4 {
+  background-color: #d49b40;
+}
+
+.bg-color5 {
+  background-color: #99c759;
+}
+
+.bg-color6 {
+  background-color: #a90cfb;
+}
+
+.bg-color7 {
+  background-color: #5bfb56;
+}
+
+.small-text {
+  font-size: 0.8em;
 }
 
 .justify {
