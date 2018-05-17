@@ -366,6 +366,7 @@ section {
   }
 }
 
+
 .content-block {
   h2.title {
     //text-transform: uppercase;
@@ -741,9 +742,9 @@ section {
       }
     }
 
-    .front {
-      z-index: 2;
-    }
+  //.front {
+  //  z-index: 2;
+  //}
 
     .back {
       -webkit-transform: rotateY(180deg);
