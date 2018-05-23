@@ -219,7 +219,7 @@ i.telegram {
   border-radius: 64px !important;
   padding: 2px 5px 0 0;
   text-align: center;
-  &:hover{
+  &:hover {
     background-color: #159cd1;
     color: #fff;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
@@ -263,7 +263,8 @@ section {
   border-radius: 0px;
   text-transform: uppercase;
 }
-div.tab-content{
+
+div.tab-content {
   background-color: #fff;
   padding: 15px;
   border: 1px solid #dae0e5;
@@ -345,12 +346,19 @@ div.tab-content{
 
     @media (max-width: 768px) {
       padding-top: 60px;
+      h1 {
+        font-size: 36px !important;
+      }
+      h2 {
+        font-size: 24px !important;
+      }
     }
     h1 {
       font-weight: 100;
       font-size: 60px;
       color: #444;
       text-shadow: 0px 0px 20px #ddd;
+
     }
     h2 {
       font-weight: 100;
@@ -358,6 +366,7 @@ div.tab-content{
       text-shadow: 0px 0px 20px #ddd;
       text-transform: uppercase;
     }
+
     .entry {
       margin-bottom: 38px;
 
@@ -1347,6 +1356,7 @@ blockquote {
     }
   }
 }
+
 .mh750 {
   min-height: 750px;
 }
@@ -1536,7 +1546,7 @@ blockquote {
   }
 
   section {
-    padding: 50px 0 !important;
+    //padding: 50px 0 !important;
   }
 }
 
