@@ -368,6 +368,10 @@
     }
 
     $(document).ready(function () {
+        $('.carousel').carousel({
+            interval: 10000
+        });
+
         $('.navbar-cookies a#acceptCookiePolicy').click(function () {
             function setCookie(name, value, days) {
                 var expires = "";

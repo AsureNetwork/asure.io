@@ -676,7 +676,18 @@
         </div>
     </div>
 </section>
-    <section class="blc-zero bg-blue" id="zero">
+    <section class="">
+    <div class="">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <section class="blc-zero bg-blue mh750" id="zero">
     <div class="container">
         <div class="row">
             <div class="col-md-6 content-block">
@@ -700,7 +711,9 @@
         </div>
     </div>
 </section>
-    <section class="blc-one bg-green" id="one">
+                </div>
+                <div class="carousel-item">
+                    <section class="blc-one bg-green mh750" id="one">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -719,7 +732,9 @@
         </div>
     </div>
 </section>
-    <section class="blc-two bg-blue" id="two">
+                </div>
+                <div class="carousel-item">
+                    <section class="blc-two bg-blue mh750" id="two">
     <div class="container">
         <div class="row">
             <div class="col-md-6 content-block">
@@ -753,7 +768,9 @@
         </div>
     </div>
 </section>
-    <section class="blc-three bg-green" id="three">
+                </div>
+                <div class="carousel-item">
+                    <section class="blc-three bg-green mh750" id="three">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -782,6 +799,19 @@
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
+</section>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 </section>
@@ -1701,6 +1731,10 @@
     }
 
     $(document).ready(function () {
+        $('.carousel').carousel({
+            interval: 10000
+        });
+
         $('.navbar-cookies a#acceptCookiePolicy').click(function () {
             function setCookie(name, value, days) {
                 var expires = "";
