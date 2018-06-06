@@ -1,0 +1,44 @@
+{
+  "index": {
+    "title": "Imprint",
+    "keywords": "Imprint",
+    "description": "Imprint",
+    "headerLinks": [
+      {
+        "title": "Über",
+        "url": "/de/#about",
+        "urlSegment": ""
+      },
+      {
+        "title": "Lösungen",
+        "url": "/de/#solutions",
+        "urlSegment": ""
+      },
+      {
+        "title": "Plattform",
+        "url": "/de/#platform",
+        "urlSegment": ""
+      },
+      {
+        "title": "Team",
+        "url": "/de/#team",
+        "urlSegment": ""
+      },
+      {
+        "title": "Roadmap",
+        "url": "/de/#roadmap",
+        "urlSegment": ""
+      },
+      {
+        "title": "Kontakt",
+        "url": "/de/#contacts",
+        "urlSegment": ""
+      },
+      {
+        "title": "Blog",
+        "url": "https://medium.com/asure-io",
+        "urlSegment": ""
+      }
+    ]
+  }
+}

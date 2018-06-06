@@ -10,7 +10,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <% for(var i in headerLinks){ %>
                 <li class="nav-item">
@@ -21,6 +21,61 @@
                 </li>
                 <% }; %>
             </ul>
+
+            <form class="form-inline language-switch">
+                <div class="dropdown d-none d-lg-block">
+                    <button class="btn dropdown-toggle" type="button" id="language-switch-btn" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        <span class="d-none" data-language="en">
+                            <img class="flag" src="../content/img/flags/us.svg"
+                                 alt="Germany Flag"> EN
+                        </span>
+                        <span class="d-none" data-language="de">
+                            <img class="flag" src="../content/img/flags/de.svg"
+                                 alt="Germany Flag"> DE
+                        </span>
+                        <span class="d-none" data-language="ru">
+                            <img class="flag" src="../content/img/flags/ru.svg"
+                                 alt="Germany Flag"> РУ
+                        </span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="language-switch-btn">
+                        <a href="#" data-language="en" class="dropdown-item">
+                            <img class="flag" src="../content/img/flags/us.svg"
+                                 alt="Germany Flag"> EN</a>
+                        <a href="#" data-language="de" class="dropdown-item">
+                            <img class="flag" src="../content/img/flags/de.svg"
+                                 alt="Germany Flag"> DE
+                        </a>
+                        <a href="#" data-language="ru" class="dropdown-item">
+                            <img class="flag" src="../content/img/flags/ru.svg"
+                                 alt="Germany Flag"> РУ
+                        </a>
+                    </div>
+                </div>
+                <div class="language-switch-mobile d-block d-lg-none">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-language="en">
+                                <img class="flag" src="../content/img/flags/us.svg"
+                                     alt="Germany Flag"> EN
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-language="de">
+                                <img class="flag" src="../content/img/flags/de.svg"
+                                     alt="Germany Flag"> DE
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-language="ru">
+                                <img class="flag" src="../content/img/flags/ru.svg"
+                                     alt="Germany Flag"> РУ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
         </div>
     </div>
 </nav>

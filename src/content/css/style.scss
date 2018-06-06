@@ -1672,5 +1672,29 @@ table.dist {
   }
 }
 
+.language-switch {
+  #language-switch-btn {
+    background: transparent;
+    margin-left: 20px;
+  }
 
+  .dropdown-menu {
+    min-width: 0;
+  }
 
+  .flag {
+    height: 15px;
+  }
+
+  .language-switch-mobile {
+    width: 100%;
+    .navbar-nav {
+      flex-direction: row;
+      justify-content: center;
+
+      .nav-item {
+        padding: 0 15px;
+      }
+    }
+  }
+}
