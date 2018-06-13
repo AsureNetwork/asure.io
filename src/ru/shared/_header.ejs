@@ -1,0 +1,38 @@
+﻿<nav class="blc-navbar navbar navbar-expand-lg navbar-light fixed-top bg-white">
+    <div class="container">
+        <a class="navbar-brand" href="<%= fixUrl(current.path, '#top') %>">
+            <img src="<%= fixUrl(current.path, 'logo/asure-logo.svg') %>" alt="ASURE LOGO"
+                 class="img-fluid navbar-logo"/> &nbsp; ASURE - Rethink insurance!
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <% for(var i in headerLinks){ %>
+                <li class="nav-item">
+                    <a class="nav-link <%- current.path[0] == headerLinks[i].urlSegment ? 'active' : '' %>"
+                       href="<%= headerLinks[i].url %>">
+                        <%= headerLinks[i].title %>
+                    </a>
+                </li>
+                <% }; %>
+            </ul>
+
+            <ul class="navbar-nav ml-auto language-switch">
+                <li class="nav-item">
+                    <a href="#" data-language="en" class="nav-link">EN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-language="de" class="nav-link">DE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-language="ru" class="nav-link">RU</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

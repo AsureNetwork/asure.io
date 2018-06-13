@@ -1,6 +1,6 @@
 {
   "globals": {
-    "title": "Asure ICO - Rethink insurance!",
+    "title": "Asure TGE/ICO - Rethink insurance!",
     "keywords": "asure open decentralized autonomous insurance platform ico blockchain eth ethereum smartcontract cryptoinvesting cryptoinvestor ico icos dao daio InsurTech cryptocurrency decentralizedInsurance Insurance",
     "description": "Asure is an open decentralized autonomous insurance platform (DAIP) built around openness, privacy and fairness, powered by blockchain innovation that brings together individuals, companies and governments in a digital world.",
 
@@ -10,14 +10,14 @@
         "url": "#about",
         "urlSegment": ""
       },
-      "news": {
-        "title": "News",
-        "url": "#news",
+      "solutions": {
+        "title": "Solutions",
+        "url": "#solutions",
         "urlSegment": ""
       },
-      "feature": {
-        "title": "Features",
-        "url": "#features",
+      "platform": {
+        "title": "Platform",
+        "url": "#platform",
         "urlSegment": ""
       },
       "team": {
@@ -37,7 +37,7 @@
       },
       "blog": {
         "title": "Blog",
-        "url": "https://medium.com/asureteam",
+        "url": "https://medium.com/asure-io",
         "urlSegment": ""
       }
     }

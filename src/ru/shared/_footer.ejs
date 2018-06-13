@@ -1,0 +1,67 @@
+<div class="blc-footer" id="customFooter">
+    <div class="container">
+        <%- partial("_social_row") %>
+
+        <div class="row">
+
+            <div class="col-md-6 links">
+                <div class="title">HOME</div>
+                <ul>
+                    <li>
+                        <a href="<%= fixUrl(current.path, 'ru/#about') %>">О нас</a>
+                    </li>
+                    <li>
+                        <a href="<%= fixUrl(current.path, 'ru/#solutions') %>">Решения</a>
+                    </li>
+                    <li>
+                        <a href="<%= fixUrl(current.path, 'ru/#platform') %>">Платформа</a>
+                    </li>
+                    <li>
+                        <a href="<%= fixUrl(current.path, 'ru/#team') %>">Команда</a>
+                    </li>
+                    <li>
+                        <a href="<%= fixUrl(current.path, 'ru/#roadmap') %>">План</a>
+                    </li>
+                    <li>
+                        <a href="<%= fixUrl(current.path, 'imprint/') %>">Imprint</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6" id="contacts">
+                <div class="title">CONTACT</div>
+                <div class="address">
+                    <p>
+                        Asure
+                        <br> Elverdinckweg 14
+                        <br> 44309 Dortmund, Germany
+
+                        <br/><br/>
+                        Asure
+                        <br> Moldawskaja 2
+                        <br> 02000 Kiev, Ukraine
+                    </p>
+
+                    <p>
+                        <br> E-Mail: info(at)asure.io
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="copyright">
+        &copy; 2018 Asure — Made with
+        <i class="fa fa-heart fa-beat red"></i> in Germany + Ukraine
+    </div>
+</footer>
+
+<nav class="navbar-footer fixed-bottom">
+    <%- partial("_cookies") %>
+    <%- partial("_social-navbar") %>
+</nav>

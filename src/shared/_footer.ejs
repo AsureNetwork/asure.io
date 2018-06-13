@@ -11,10 +11,10 @@
                         <a href="<%= fixUrl(current.path, '#about') %>">About</a>
                     </li>
                     <li>
-                        <a href="<%= fixUrl(current.path, '#news') %>">News</a>
+                        <a href="<%= fixUrl(current.path, '#solutions') %>">Solutions</a>
                     </li>
                     <li>
-                        <a href="<%= fixUrl(current.path, '#features') %>">Features</a>
+                        <a href="<%= fixUrl(current.path, '#platform') %>">Platform</a>
                     </li>
                     <li>
                         <a href="<%= fixUrl(current.path, '#team') %>">Team</a>
@@ -24,6 +24,9 @@
                     </li>
                     <li>
                         <a href="<%= fixUrl(current.path, 'imprint/') %>">Imprint</a>
+                    </li>
+                    <li>
+                        <a href="<%= fixUrl(current.path, 'dataprivacy-policy/') %>">Data Privacy Policy</a>
                     </li>
                 </ul>
             </div>
@@ -60,3 +63,8 @@
         <i class="fa fa-heart fa-beat red"></i> in Germany + Ukraine
     </div>
 </footer>
+
+<nav class="navbar-footer fixed-bottom">
+<%- partial("_cookies") %>
+<%- partial("_social-navbar") %>
+</nav>

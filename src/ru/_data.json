@@ -1,0 +1,44 @@
+{
+  "index": {
+    "title": "Asure TGE/ICO - Rethink insurance!",
+    "keywords": "децентрализованная автономная платформа",
+    "description": "Asure is an open децентрализованная автономная insurance платформа (DAIP) built around openness, privacy and fairness, powered by blockchain innovation that brings together individuals, companies and governments in a digital world.",
+    "headerLinks": [
+      {
+        "title": "О нас",
+        "url": "/ru/#about",
+        "urlSegment": ""
+      },
+      {
+        "title": "Решения",
+        "url": "/ru/#solutions",
+        "urlSegment": ""
+      },
+      {
+        "title": "Платформа",
+        "url": "/ru/#platform",
+        "urlSegment": ""
+      },
+      {
+        "title": "Команда",
+        "url": "/ru/#team",
+        "urlSegment": ""
+      },
+      {
+        "title": "План",
+        "url": "/ru/#roadmap",
+        "urlSegment": ""
+      },
+      {
+        "title": "Контакт",
+        "url": "/ru/#contacts",
+        "urlSegment": ""
+      },
+      {
+        "title": "Blog",
+        "url": "https://medium.com/asure-io",
+        "urlSegment": ""
+      }
+    ]
+  }
+}

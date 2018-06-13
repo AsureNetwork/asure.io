@@ -1,0 +1,33 @@
+﻿<% include ../helpers.ejs %>
+<%- partial("/shared/_hero") %>
+<%- partial("/shared/_about") %>
+<%- partial("/shared/_solutions") %>
+<!--<%- partial("/shared/_solutions_two") %>-->
+<%- partial("/shared/_newsletter") %>
+
+<div id="platform">
+    <%- partial("/shared/_features") %>
+    <%- partial("/shared/_features-carousel") %>
+</div>
+
+<%
+if (false) {
+    partial("/shared/_partners")
+    partial("/shared/_subscribe")
+    partial("/shared/_team")
+}
+%>
+<%- partial("/shared/_whitepaper") %>
+<%- partial("/shared/_team") %>
+<%- partial("/shared/_investors") %>
+<%
+if (false) {
+    partial("/shared/_ico")
+    partial("/shared/_token")
+    partial("/shared/_graph")
+}
+%>
+<%- partial("/shared/_whitepaper") %>
+<%- partial("/shared/_timeline") %>
+<%- partial("/shared/_faq") %>
+<%- partial("/shared/_footer") %>

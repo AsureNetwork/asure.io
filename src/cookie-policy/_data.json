@@ -1,0 +1,44 @@
+{
+  "index": {
+    "title": "Cookie Policy",
+    "keywords": "cookie policy",
+    "description": "Cookie Policy",
+    "headerLinks": [
+      {
+        "title": "About",
+        "url": "../#about",
+        "urlSegment": ""
+      },
+      {
+        "title": "News",
+        "url": "../#news",
+        "urlSegment": ""
+      },
+      {
+        "title": "Features",
+        "url": "../#features",
+        "urlSegment": ""
+      },
+      {
+        "title": "Team",
+        "url": "../#team",
+        "urlSegment": ""
+      },
+      {
+        "title": "Roadmap",
+        "url": "../#roadmap",
+        "urlSegment": ""
+      },
+      {
+        "title": "Contacts",
+        "url": "../#contacts",
+        "urlSegment": ""
+      },
+      {
+        "title": "Blog",
+        "url": "https://medium.com/asure-io",
+        "urlSegment": ""
+      }
+    ]
+  }
+}
