@@ -36,21 +36,22 @@
                 html.clientHeight, html.scrollHeight, html.offsetHeight );
             return height;
         }
-        function resizeIframe(obj) {
-            obj.style.height = getDocHeight(window.document) + 'px';
+        function resizeIframe() {
+            var frame=document.getElementById("frame");
+            frame.style.height = getDocHeight(window.document) + 'px';
         }
     </script>
 </head>
-<body onresize="resizeIframe(this)">
+<body onresize="resizeIframe()">
 <a class="button" href="https://ipfs.io/ipns/dapp.asure.io">
     <img src="expand-button.png" />
 </a>
-<iframe name="frame" class="frame" src="https://ipfs.io/ipns/dapp.asure.io"
+<iframe id="frame" name="frame" class="frame" src="https://ipfs.io/ipns/dapp.asure.io"
         width="100%"
         frameborder="0"
         scrolling="no"
         seamless="seamless"
-        onload="resizeIframe(this)"
+        onload="resizeIframe()"
 ></iframe>
 
 
