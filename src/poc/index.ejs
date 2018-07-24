@@ -1,19 +1,58 @@
-﻿<% include ../helpers.ejs %>
-<div>
+﻿<html>
+<head>
+    <title>Asure.io | Proof of Concept</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            height: auto;
+            overflow: auto
+        }
+        .frame{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            z-index: 0;
+        }
+        .button{
+            position: absolute;
+            right:30px;
+            bottom:30px;
+            z-index: 1;
+        }
+        .button img{
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+    <script>
+        function getDocHeight(doc) {
+            doc = doc || document;
+            // stackoverflow.com/questions/1145850/
+            var body = doc.body, html = doc.documentElement;
+            var height = Math.max( body.scrollHeight, body.offsetHeight,
+                html.clientHeight, html.scrollHeight, html.offsetHeight );
+            return height;
+        }
+        function resizeIframe(obj) {
+            obj.style.height = getDocHeight(window.document) + 'px';
+        }
+    </script>
+</head>
+<body onresize="resizeIframe(this)">
+<a class="button" href="https://ipfs.io/ipns/dapp.asure.io">
+    <img src="expand-button.png" />
+</a>
+<iframe name="frame" class="frame" src="https://ipfs.io/ipns/dapp.asure.io"
+        width="100%"
+        frameborder="0"
+        scrolling="no"
+        seamless="seamless"
+        onload="resizeIframe(this)"
+></iframe>
 
-    <div class="blc-faq" id="faq">
-        <div class="container">
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="desc">
-                        <h2>Proof of Concept</h2>
-
-                        will be available here soon
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
+</body>
+</html>
