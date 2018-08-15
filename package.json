@@ -22,5 +22,8 @@
   "devDependencies": {
     "harp": "^0.25.0",
     "node-sass": "^4.9.0"
+  },
+  "dependencies": {
+    "html5-device-mockups": "^3.2.1"
   }
 }
