@@ -54,18 +54,13 @@
     <link rel="stylesheet" type="text/css" href="<%= prefixUrl() %>js/libs/html5-device-mockups/dist/device-mockups.min.css">
 
     <script>
-        window.location.href = 'https://www.asure.network';
+        //window.location.href = 'https://www.asure.network';
     </script>
 </head>
 <body id="top">
 
 <%- partial("/shared/_header") %>
 <%- yield %>
-
-
-<a href="https://t.me/AsureNetwork" target="_blank" rel="noopener" alt="telegram" class="d-none d-sm-inline">
-    <i class="fab fa-telegram-plane telegram"></i>
-</a>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -265,60 +260,6 @@
                     }
                 });
             }
-
-            // Morris.Donut({
-            //     element: 'graph_chart',
-            //     data: [
-            //         {label: "ASURE TOTAL SUPPLY", value: 6000000000},//sale
-            //         {label: "ASURE TOTAL SUPPLY", value: 1500000000},//team
-            //         {label: "ASURE TOTAL SUPPLY", value: 1500000000},//Community & Epansion
-            //         {label: "ASURE TOTAL SUPPLY", value: 500000000},//advisors
-            //         {label: "ASURE TOTAL SUPPLY", value: 500000000} //bounties
-            //     ],
-            //     formatter: function (x) {
-            //         return "10.000.000.000"
-            //     },
-            //     colors: [
-            //         '#69acd6', // sale
-            //         '#e61664', // team
-            //         '#B59439', // advisors
-            //         '#7ec5b7', // community & epansion
-            //         '#a90cfb'  // bounties
-            //     ]
-            // });
-
-            // Morris.Donut({
-            //     element: 'graph_allocation_chart',
-            //     data: [
-            //         {label: "Platform Development", value: 55},//sale
-            //         {label: "Legal", value: 15},//team
-            //         {label: "Marketing", value: 15},//Community & Epansion
-            //         {label: "Tax", value: 10},//advisors
-            //         {label: "Office Expenses", value: 5} //bounties
-            //     ],
-            //     formatter: function (x) {
-            //         return x + "%"
-            //     },
-            //     colors: [
-            //         '#69acd6', // sale
-            //         '#e61664', // team
-            //         '#B59439', // advisors
-            //         '#7ec5b7', // community & epansion
-            //         '#a90cfb'  // bounties
-            //     ]
-            // });
-
-            // $("a").on('click', function (event) {
-            //     if (this.hash !== "") {
-            //         event.preventDefault();
-            //         var hash = this.hash;
-            //         $('html, body').animate({
-            //             scrollTop: $(hash).offset().top
-            //         }, 800, function () {
-            //             window.location.hash = hash;
-            //         });
-            //     }
-            // });
         });
     }
 </script>
