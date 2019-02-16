@@ -1,0 +1,29 @@
+User-agent: * 
+Disallow: 
+
+User-agent: spambot
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: Microsoft.URL.Control
+Disallow: /
+
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: penthesilea
+Disallow: /
+
+Sitemap: https://www.asure.io/sitemap.xml
+
