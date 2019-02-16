@@ -3,26 +3,25 @@
     "title": "Asure Foundation",
     "keywords": "asure open decentralized autonomous SOCIAL SECURITY insurance platform ico blockchain eth ethereum smartcontract cryptoinvesting cryptoinvestor ico icos dao daio InsurTech cryptocurrency decentralizedInsurance Insurance",
     "description": "Asure provides a scalable blockchain network for decentralized social security.",
-
     "headerLinks": {
       "about": {
         "title": "About",
         "url": "#about",
         "urlSegment": ""
       },
+      "activities": {
+        "title": "Activities",
+        "url": "#activities",
+        "urlSegment": ""
+      },
       "solutions": {
-        "title": "Solutions",
-        "url": "#solutions",
+        "title": "Donations",
+        "url": "#donations",
         "urlSegment": ""
       },
       "team": {
-        "title": "Team",
-        "url": "#team",
-        "urlSegment": ""
-      },
-      "roadmap": {
-        "title": "Roadmap",
-        "url": "#roadmap",
+        "title": "Council",
+        "url": "#council",
         "urlSegment": ""
       },
       "contacts": {
