@@ -3,42 +3,26 @@
         <%- partial("_social_row") %>
 
         <div class="row">
-
             <div class="col-md-6 links">
-                <div class="title">Navigation</div>
+                <div class="title">NAVIGATION</div>
                 <ul>
-                    <li>
-                        <a href="<%= fixUrl(current.path, '#about') %>">About</a>
-                    </li>
-                    <li>
-                        <a href="<%= fixUrl(current.path, '#solutions') %>">Solutions</a>
-                    </li>
-                    <li>
-                        <a href="<%= fixUrl(current.path, '#platform') %>">Platform</a>
-                    </li>
-                    <li>
-                        <a href="<%= fixUrl(current.path, '#team') %>">Team</a>
-                    </li>
-                    <li>
-                        <a href="<%= fixUrl(current.path, '#roadmap') %>">Roadmap</a>
-                    </li>
-                    <li>
-                        <a href="<%= fixUrl(current.path, 'imprint/') %>">Imprint</a>
-                    </li>
-                    <li>
-                        <a href="<%= fixUrl(current.path, 'dataprivacy-policy/') %>">Data Privacy Policy</a>
-                    </li>
+                    <% for(var i in footerLinks){ %>
+                        <li>
+                            <a href="<%= footerLinks[i].url %>">
+                                <%= footerLinks[i].title %>
+                            </a>
+                        </li>
+                    <% } %>
                 </ul>
             </div>
             <div class="col-md-6" id="contacts">
                 <div class="title">CONTACT</div>
                 <div class="address">
                     <p>
-                        Asure
-                        <br> Elverdinckweg 14
-                        <br> 44309 Dortmund, Germany
-
-
+                        Asure Foundation <br>
+                        c/o Immobörse GmbH <br>
+                        Baarerstrasse 112 <br>
+                        6300 Zug, Switzerland
                     </p>
 
                     <p>
@@ -56,11 +40,11 @@
 
 <footer id="footer">
     <div class="copyright">
-        &copy; 2018 Asure — Made with
-        <i class="fa fa-heart fa-beat red"></i> in Germany + Ukraine
+        &copy; 2018-2019 Asure Foundation — Made with
+        <i class="fa fa-heart fa-beat red"></i> in Switzerland
     </div>
 </footer>
 
 <nav class="navbar-footer fixed-bottom">
-<%- partial("_cookies") %>
+    <%- partial("_cookies") %>
 </nav>

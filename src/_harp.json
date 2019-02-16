@@ -34,6 +34,48 @@
         "url": "https://medium.com/AsureNetwork",
         "urlSegment": ""
       }
+    },
+    "footerLinks": {
+      "about": {
+        "title": "About",
+        "url": "#about",
+        "urlSegment": ""
+      },
+      "activities": {
+        "title": "Activities",
+        "url": "#activities",
+        "urlSegment": ""
+      },
+      "solutions": {
+        "title": "Donations",
+        "url": "#donations",
+        "urlSegment": ""
+      },
+      "team": {
+        "title": "Council",
+        "url": "#council",
+        "urlSegment": ""
+      },
+      "contacts": {
+        "title": "Contact",
+        "url": "#contacts",
+        "urlSegment": ""
+      },
+      "blog": {
+        "title": "Blog",
+        "url": "https://medium.com/AsureNetwork",
+        "urlSegment": ""
+      },
+      "imprint": {
+        "title": "Imprint",
+        "url": "imprint/",
+        "urlSegment": ""
+      },
+      "dataprivacy-policy": {
+        "title": "Data Privacy Policy",
+        "url": "dataprivacy-policy/",
+        "urlSegment": ""
+      }
     }
   }
 }
