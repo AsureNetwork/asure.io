@@ -14,14 +14,9 @@
         "url": "#activities",
         "urlSegment": ""
       },
-      "solutions": {
+      "donations": {
         "title": "Donations",
         "url": "#donations",
-        "urlSegment": ""
-      },
-      "team": {
-        "title": "Council",
-        "url": "#council",
         "urlSegment": ""
       },
       "contacts": {
@@ -46,14 +41,9 @@
         "url": "#activities",
         "urlSegment": ""
       },
-      "solutions": {
+      "donations": {
         "title": "Donations",
         "url": "#donations",
-        "urlSegment": ""
-      },
-      "team": {
-        "title": "Council",
-        "url": "#council",
         "urlSegment": ""
       },
       "contacts": {
