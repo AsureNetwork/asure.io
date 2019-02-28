@@ -385,6 +385,14 @@ div.tab-content {
   min-height: 100vh;
 
   .card {
+    .card-header {
+      background-color: #8ad7ff;
+
+      h5 {
+        margin: 0;
+      }
+    }
+
     ul {
       padding-left: 0;
     }
