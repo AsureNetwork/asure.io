@@ -65,6 +65,11 @@
         crossorigin="anonymous"></script>
 <script src="<%= prefixUrl() %>js/libs/slick/slick.min.js"></script>
 <script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+
+        $('ul.nav-tabs li:first-child a').tab('show');
+    });
     function getCookie(cname) {
         var name = cname + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
