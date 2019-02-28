@@ -581,7 +581,7 @@ Geneva, 2nd edition, 2017."><strong>4.1 billion people worldwide</strong></span>
             setCookie('enable_cookies', true, 365 * 3);
             $('.navbar-cookies').addClass('d-none');
             return false;
-        }
+        };
 
         self.showCookieInformation = function () {
             if (document.cookie.indexOf('enable_cookies=') <= 0) {
@@ -598,11 +598,11 @@ Geneva, 2nd edition, 2017."><strong>4.1 billion people worldwide</strong></span>
 
         self.isLanguagePath = function () {
             return self.languagePaths.indexOf(location.pathname) !== -1;
-        }
+        };
 
         self.registerEvents = function () {
             $('.language-switch a').click(self.changeLanguage);
-        }
+        };
 
         self.changeLanguage = function () {
             setCookie('language', $(this).data('language'), 365 * 3);
@@ -648,9 +648,9 @@ Geneva, 2nd edition, 2017."><strong>4.1 billion people worldwide</strong></span>
     var langMgr = new LanguageManager();
 
     cookiePolicyMgr.showCookieInformation();
-    langMgr.updateUi();
+    //langMgr.updateUi();
 
-    if (!langMgr.switchToLanguage()) {
+    if (true) {
         $(document).ready(function () {
             cookiePolicyMgr.registerEvents();
             langMgr.registerEvents();
@@ -662,7 +662,7 @@ Geneva, 2nd edition, 2017."><strong>4.1 billion people worldwide</strong></span>
 
             $('.flip-container').click(function () {
                 this.classList.toggle("clicked");
-            })
+            });
 
 
             $('.blc-articles .items').slick({

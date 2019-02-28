@@ -163,7 +163,7 @@
             setCookie('enable_cookies', true, 365 * 3);
             $('.navbar-cookies').addClass('d-none');
             return false;
-        }
+        };
 
         self.showCookieInformation = function () {
             if (document.cookie.indexOf('enable_cookies=') <= 0) {
@@ -180,11 +180,11 @@
 
         self.isLanguagePath = function () {
             return self.languagePaths.indexOf(location.pathname) !== -1;
-        }
+        };
 
         self.registerEvents = function () {
             $('.language-switch a').click(self.changeLanguage);
-        }
+        };
 
         self.changeLanguage = function () {
             setCookie('language', $(this).data('language'), 365 * 3);
@@ -230,9 +230,9 @@
     var langMgr = new LanguageManager();
 
     cookiePolicyMgr.showCookieInformation();
-    langMgr.updateUi();
+    //langMgr.updateUi();
 
-    if (!langMgr.switchToLanguage()) {
+    if (true) {
         $(document).ready(function () {
             cookiePolicyMgr.registerEvents();
             langMgr.registerEvents();
@@ -244,7 +244,7 @@
 
             $('.flip-container').click(function () {
                 this.classList.toggle("clicked");
-            })
+            });
 
 
             $('.blc-articles .items').slick({
