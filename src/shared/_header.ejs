@@ -14,7 +14,7 @@
             <ul class="navbar-nav ml-auto">
                 <% for(var i in headerLinks){ %>
                 <li class="nav-item">
-                    <a class="nav-link <%- current.path[0] == headerLinks[i].urlSegment ? 'active' : '' %>"
+                    <a class="nav-link scroll-animation <%- current.path[0] == headerLinks[i].urlSegment ? 'active' : '' %>"
                        href="<%= headerLinks[i].url %>">
                         <%= headerLinks[i].title %>
                     </a>
