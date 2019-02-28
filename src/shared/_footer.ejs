@@ -23,24 +23,14 @@
             <div class="col-md-3 links border-left-gray">
                 <div class="title">MENU</div>
                 <ul>
-                    <li>
-                        <a class="scroll-animation" href="<%= fixUrl(current.path, '#about') %>">About</a>
-                    </li>
-                    <li>
-                        <a class="scroll-animation" href="<%= fixUrl(current.path, '#tge') %>">TGE</a>
-                    </li>
-                    <li>
-                        <a class="scroll-animation" href="<%= fixUrl(current.path, '#news') %>">Media</a>
-                    </li>
-                    <li>
-                        <a class="scroll-animation" href="<%= fixUrl(current.path, '#team') %>">Team</a>
-                    </li>
-                    <li>
-                        <a class="scroll-animation" href="<%= fixUrl(current.path, '#roadmap') %>">Roadmap</a>
-                    </li>
-                    <li>
-                        <a class="scroll-animation" href="<%= fixUrl(current.path, '#partners') %>">Partners</a>
-                    </li>
+                    <% for(var i in headerLinks){ %>
+                        <li>
+                            <a class="scroll-animation <%- current.path[0] == headerLinks[i].urlSegment ? 'active' : '' %>"
+                               href="<%= headerLinks[i].url %>">
+                                <%= headerLinks[i].title %>
+                            </a>
+                        </li>
+                    <% }; %>
                 </ul>
             </div>
             <div class="col-md-3 links border-left-gray">
