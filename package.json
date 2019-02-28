@@ -20,6 +20,7 @@
   ],
   "license": "ISC",
   "devDependencies": {
+    "bootstrap": "^4.3.1",
     "harp": "^0.29.0",
     "node-sass": "^4.9.0"
   },

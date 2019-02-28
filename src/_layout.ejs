@@ -9,7 +9,7 @@
     <meta name="keywords" content="<%= getByKey("keywords", keywords) %>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="google-site-verification" content="y44WuK2ZR66lvH1A_awHiF5xZAnuldnjUJ2cFWTlH_I" />
+    <meta name="google-site-verification" content="y44WuK2ZR66lvH1A_awHiF5xZAnuldnjUJ2cFWTlH_I"/>
 
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<%= fixUrl(current.path, 'content/img/ico/ms-icon-144x144.png') %>">
@@ -42,8 +42,6 @@
     <link rel="icon" type="image/png" sizes="16x16"
           href="<%= fixUrl(current.path, 'content/img/ico/favicon-16x16.png') %>">
     <link rel="manifest" href="<%= fixUrl(current.path, 'content/img/ico/manifest.json') %>">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic"
           rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
@@ -56,14 +54,14 @@
 <%- partial("/shared/_header") %>
 <%- yield %>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 <script src="<%= prefixUrl() %>js/libs/slick/slick.min.js"></script>
 <script>
@@ -219,8 +217,7 @@
                     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() + 75 > scrollPos) {
                         $('.blc-navbar .navbar-nav a[href*="#"]:not([href="#"])').removeClass("active");
                         currLink.addClass("active");
-                    }
-                    else {
+                    } else {
                         currLink.removeClass("active");
                     }
                 });
