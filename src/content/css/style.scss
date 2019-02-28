@@ -154,11 +154,6 @@ $hero-title-color: #62381b;
     }*/
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .links a:hover {
   color: #ffffff;
 }
@@ -384,161 +379,16 @@ div.tab-content {
 }
 
 .blc-hero {
-  /*background-color: #000000;*/
-  height: 100vh;
-  /*@media (max-width: 1024px) {
-    height: 150vh;
-  }*/
-  @media (min-width: 1024px) {
-    div.intro {
-      /*padding: 100px 20px 0px 20px;*/
+  min-height: 100vh;
+
+  .card {
+    ul {
+      padding-left: 0;
     }
 
-  }
-
-  .scroll-down {
-    position: absolute;
-    bottom: 20px;
-    margin: 0 50%;
-    font-size: 50px;
-    right: -25px;
-    color: #63acd3;
-  }
-
-  div.intro iframe {
-    border: #444 solid 1px;
-  }
-
-  &__background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    /*background-image: url("../img/triangles.svg");
-    opacity: 0.3;*/
-    background-size: cover;
-    border-bottom: 0.1px solid #efefef;
-
-    @media (max-width: 1024px) {
-      height: 100vh;
-    }
-
-    /*
-    background: linear-gradient(180deg, #8fddc9, #93c9e3, #93ade3);
-    background-size: 600% 600%;
-
-    animation: AnimationName 53s ease infinite;
-    -moz-animation: AnimationName 53s ease infinite;
-    -o-animation: AnimationName 53s ease infinite;
-    animation: AnimationName 53s ease infinite;
-
-    @keyframes AnimationName {
-      0%{background-position:50% 0%}
-      50%{background-position:51% 100%}
-      100%{background-position:50% 0%}
-    }
-    @-moz-keyframes AnimationName {
-      0%{background-position:50% 0%}
-      50%{background-position:51% 100%}
-      100%{background-position:50% 0%}
-    }
-    @-o-keyframes AnimationName {
-      0%{background-position:50% 0%}
-      50%{background-position:51% 100%}
-      100%{background-position:50% 0%}
-    }
-    @keyframes AnimationName {
-      0%{background-position:50% 0%}
-      50%{background-position:51% 100%}
-      100%{background-position:50% 0%}
-    }
-    */
-
-    iframe {
-      overflow: hidden;
-      height: 100vh;
-    }
-  }
-
-  .hero {
-    position: relative;
-    color: #444;
-    padding-top: 60px;
-    text-align: center;
-
-    @media (max-width: 768px) {
-      padding-top: 60px;
-      h1 {
-        font-size: 36px !important;
-      }
-      h2 {
-        font-size: 24px !important;
-      }
-    }
-
-    .about {
-      .item {
-        position: relative;
-        margin-bottom: 70px;
-
-        img {
-          width: 48px;
-          height: 48px;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .title {
-        margin-bottom: 15px;
-        padding: 0 50px 0 80px;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #444;
-      }
-
-      p, ul {
-        padding: 0 50px 0 80px;
-        color: #444;
-        //line-height: 22px;
-        text-align: justify;
-      }
-    }
-
-    h1 {
-      font-weight: 100;
-      font-size: 40px;
-      color: $hero-title-color;
-      text-shadow: 0px 0px 20px #ddd;
-
-    }
-
-    h2 {
-      font-weight: 100;
-      color: $hero-title-color;
-      text-shadow: 0px 0px 20px #ddd;
-      text-transform: uppercase;
-      font-size: 24px !important;
-    }
-
-    .entry {
-      margin-bottom: 38px;
-
-      p {
-        margin-bottom: 24px;
-        font-size: 18px;
-        color: #444;
-      }
-
-      small {
-        color: #444;
-      }
-
-      img {
-        max-width: 220px;
-      }
+    .fa {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
     }
   }
 }
