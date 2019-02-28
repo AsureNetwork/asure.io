@@ -476,6 +476,36 @@ div.tab-content {
       }
     }
 
+    .about {
+      .item {
+        position: relative;
+        margin-bottom: 70px;
+
+        img {
+          width: 48px;
+          height: 48px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .title {
+        margin-bottom: 15px;
+        padding: 0 50px 0 80px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #444;
+      }
+
+      p, ul {
+        padding: 0 50px 0 80px;
+        color: #444;
+        //line-height: 22px;
+        text-align: justify;
+      }
+    }
+
     h1 {
       font-weight: 100;
       font-size: 40px;
@@ -2097,4 +2127,9 @@ div.container.staking-calculator {
     color: #000;
   }
 
+}
+
+.blc{
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
