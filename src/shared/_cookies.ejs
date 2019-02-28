@@ -2,12 +2,14 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <p>
-                    We use cookies to help us improve, promote, and protect our services.
-                    By continuing to use the site, you agree to our
-                    <a href="<%= fixUrl(current.path, 'cookie-policy/') %>">cookie policy</a>.
-                    <a id="acceptCookiePolicy" href="#"><strong>Accept</strong></a>
-                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        We use cookies to help us improve, promote, and protect our services.
+                        By continuing to use the site, you agree to our
+                        <a href="<%= fixUrl(current.path, 'cookie-policy/') %>">cookie policy</a>.
+                    </div>
+                    <button id="acceptCookiePolicy" class="btn btn-sm btn-action">Accept</button>
+                </div>
             </div>
         </div>
     </div>
